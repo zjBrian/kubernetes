@@ -1,5 +1,7 @@
 ![image](https://user-images.githubusercontent.com/46511222/168038650-5503608d-751e-4749-9f8c-16d6aaad2b3f.png)
 
+Node-exporter用于采集kubernetes集群中各个节点的物理指标，比如：Memory、CPU等。可以直接在每个物理节点是直接安装，这里我们使用DaemonSet部署到每个节点上，使用 hostNetwork: true 和 hostPID: true 使其获得Node的物理指标信息
+
 
 #prometheus
 
